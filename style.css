@@ -22,3 +22,16 @@ body {
 main {
   margin: 10px 5px;
 }
+
+input {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 11px;
+  font-size: 1rem;
+  background-color: rgb(245, 228, 208);
+  border-radius: 5px;
+  border-color: rgb(235, 220, 135);
+}

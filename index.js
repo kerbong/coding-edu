@@ -12,8 +12,11 @@ plusForm.addEventListener("submit", plus);
 //plus함수
 function plus(event) {
   event.preventDefault();
-  console.log(parseFloat(a.value) + parseFloat(b.value));
-  console.log(typeof parseFloat(a.value));
+  alert(
+    `${a.value}와 ${b.value}의 덧셈 결과는 ${
+      parseFloat(a.value) + parseFloat(b.value)
+    } 입니다.`
+  );
 }
 
 // ========== 뺄셈관련 ==========
@@ -30,7 +33,11 @@ minusForm.addEventListener("submit", minus);
 //뺄셈함수
 function minus(event) {
   event.preventDefault();
-  console.log(c.value - d.value);
+  alert(
+    `${c.value}와 ${d.value}의 뺄셈 결과는 ${
+      parseFloat(c.value) - parseFloat(d.value)
+    } 입니다.`
+  );
 }
 
 // ========== 나눗셈관련 ==========
@@ -47,7 +54,11 @@ divideForm.addEventListener("submit", divide);
 //divide함수
 function divide(event) {
   event.preventDefault();
-  console.log(e.value / f.value);
+  alert(
+    `${e.value}와 ${f.value}의 나눗셈 결과는 ${
+      parseFloat(e.value) / parseFloat(f.value)
+    } 입니다.`
+  );
 }
 
 // ========== 곱셈관련 ==========
@@ -64,5 +75,9 @@ multipleForm.addEventListener("submit", multiple);
 //multiple함수
 function multiple(event) {
   event.preventDefault();
-  console.log(g.value * h.value);
+  alert(
+    `${g.value}와 ${h.value}의 곱셈 결과는 ${
+      parseFloat(g.value) * parseFloat(h.value)
+    } 입니다.`
+  );
 }
